@@ -23,7 +23,7 @@ async def send(event):
     message_id = event.message.id
     thumb = W2H_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {W2H}\n\n⚡ **[Legendary W2HBOT](t.me/W2H_Userbot)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {W2H}\n\n⚡ **[Legendary W2HBOT](t.me/Its_UltronBot)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -71,7 +71,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {W2H}\n\n{string}\n\n        ⚡ **[Legendary W2HBOT](t.me/W2H_Userbot)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {W2H}\n\n{string}\n\n        ⚡ **[Legendary W2HBOT](t.me/Its_UltronBot)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)

@@ -80,9 +80,9 @@ async def stats(
     response += f"♛ **Unread Mentions:** {unread_mentions} \n\n"
     response += f"🢂   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [W2HBOT](https://t.me/W2H_Userbot)"
+        f"📌 **From The DataBase Of** :- [W2HBOT](https://t.me/Its_UltronBot)"
     )
-    await W2H.edit(response)
+    await ultron.edit(response)
 
 
 def make_mention(user):

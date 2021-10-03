@@ -8,7 +8,7 @@ from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
 from userbot.utils import load_module
-from userbot import LOAD_PLUG, LOGS, W2Hversion
+from userbot import LOAD_PLUG, LOGS, ultronversion
 from pathlib import Path
 import asyncio
 import telethon.utils
@@ -53,10 +53,10 @@ for name in files:
 
 import userbot._core
 
-print(f"""W2HBOT IS ON!!! W2HBOT VERSION :- {W2Hversion}
+print(f"""W2HBOT IS ON!!! W2HBOT VERSION :- {ultronversion}
 JOIN OFFICIAL CHAT GROUP AND UPDATES CHANNEL
-OFFICIAL GROUP :- @W2HSupport
-OFFICIAL CHANNEL :- @W2H_Userbot
+OFFICIAL GROUP :- @UltronBot_Support
+OFFICIAL CHANNEL :- @Its_UltronBot
 DO .alive OR .ping CHECK IF I'M ON!
 IF YOU FACE ANY ISSUE THEN ASK AT CHAT GROUP.""")
 
@@ -66,13 +66,13 @@ async def legend_is_on():
             await bot.send_file(
                 Config.PRIVATE_GROUP_BOT_API_ID,
                 W2H_PIC,
-                caption=f"#START \n\nDeployed W2HBOT Successfully\n\n**W2HBOT- 1.Ø**\n\nType `.ping` or `.alive` to check! \n\nJoin [W2HBot Channel](t.me/W2H_Userbot) for Updates & [W2HBot Chat](t.me/w2hsupport) for any query regarding W2HBot",
+                caption=f"#START \n\nDeployed W2HBOT Successfully\n\n**W2HBOT- 1.Ø**\n\nType `.ping` or `.alive` to check! \n\nJoin [W2HBot Channel](t.me/Its_UltronBot) for Updates & [W2HBot Chat](t.me/UltronBot_Support) for any query regarding W2HBot",
             )
     except Exception as e:
         print(str(e))
 # Join LegndBot Channel after deploying 🤐😅
     try:
-        await bot(JoinChannelRequest("@w2h_userbot"))
+        await bot(JoinChannelRequest("@Its_UltronBot"))
     except BaseException:
         pass
 
@@ -82,7 +82,7 @@ async def legend_is_on():
          pass
 
     try:
-        await bot(JoinChannelRequest("@W2hSupport"))
+        await bot(JoinChannelRequest("@UltronBot_Support"))
     except BaseException:
          pass
 

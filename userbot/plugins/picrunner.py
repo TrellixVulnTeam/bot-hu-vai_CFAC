@@ -69,7 +69,7 @@ async def animepp():
 @bot.on(admin_cmd(pattern="ppr ?(.*)", outgoing=True))
 async def main(event):
     await event.edit(
-        "**Starting Profile Pic Runner by @W2H_Userbot ..**"
+        "**Starting Profile Pic Runner by @Its_UltronBot ..**"
     )  # Owner @David99q
     while True:
         try:

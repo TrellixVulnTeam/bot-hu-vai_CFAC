@@ -18,15 +18,15 @@ async def _(event):
     cmd = "".join(event.text.split(maxsplit=1)[1:])
     if not cmd:
         return await edit_delete(event, "`What should i execute?..`")
-    W2Hevent = await edit_or_reply(event, "`Executing.....`")
-    process = await asyncio.create_subprocess_sW2H(
+    ultronevent = await edit_or_reply(event, "`Executing.....`")
+    process = await asyncio.create_subprocess_sultron.(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
     stdout, stderr = await process.communicate()
     result = str(stdout.decode().strip()) + str(stderr.decode().strip())
-    W2Huser = await event.client.get_me()
-    if W2Huser.username:
-        curruser = W2Huser.username
+    ultronuser = await event.client.get_me()
+    if ultronuser.username:
+        curruser = ultronuser.username
     else:
         curruser = "W2HBOT"
     uid = os.geteuid()
@@ -55,7 +55,7 @@ async def _(event):
     cmd = "".join(event.text.split(maxsplit=1)[1:])
     if not cmd:
         return await edit_delete(event, "`What should i run ?..`")
-    W2Hevent = await edit_or_reply(event, "`Running ...`")
+    ultronevent = await edit_or_reply(event, "`Running ...`")
     old_stderr = sys.stderr
     old_stdout = sys.stdout
     redirected_output = sys.stdout = io.StringIO()
@@ -80,7 +80,7 @@ async def _(event):
         evaluation = "Success"
     final_output = f"**•  Eval : **\n`{cmd}` \n\n**•  Result : **\n`{evaluation}` \n"
     await edit_or_reply(
-        W2Hevent,
+        ultronevent,
         text=final_output,
         aslink=True,
         linktext=f"**•  Eval : **\n`{cmd}` \n\n**•  Result : **\n",

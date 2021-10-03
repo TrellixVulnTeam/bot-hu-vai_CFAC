@@ -35,7 +35,7 @@ async def _(event):
             response = await response
         except YouBlockedUserError:
             await event.reply("unblock @Rekognition_Bot and try again")
-            await W2H.delete()
+            await ultron.delete()
             return
         if response.text.startswith("See next message."):
             response = conv.wait_event(

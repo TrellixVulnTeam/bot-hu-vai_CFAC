@@ -1,4 +1,4 @@
-"""Fetch App Details from Playstore. @W2H_Userbot
+"""Fetch App Details from Playstore. @Its_UltronBot
 .app <app_name> to fetch app details.
 .appr <app_name>  to fetch app details with Xpl0iter request link.
 .mods <app_name> to get the premier app from telegram if available.."""

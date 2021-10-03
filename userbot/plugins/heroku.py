@@ -187,7 +187,7 @@ async def _(dyno):
         thumb = W2H_logo
     except:
         return await dyno.reply(
-            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/W2HSupport)"
+            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/UltronBot_Support)"
         )
     W2H_data = app.get_log()
     W2H_key = (

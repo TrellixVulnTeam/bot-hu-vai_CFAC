@@ -60,7 +60,7 @@ async def _(event):
 
         await asyncio.sleep(DEL_TIME_OUT)
 
-    await W2H.edit(f"Auto Name has been started my Master")
+    await ultron.edit(f"Auto Name has been started my Master")
 
 
 @bot.on(admin_cmd(pattern="autobio"))  # pylint:disable=E0602

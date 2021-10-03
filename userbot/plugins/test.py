@@ -1,4 +1,4 @@
-# Credit To @David99q . Keep credit if you are going to edit it. Join @W2H_Userbot
+# Credit To @David99q . Keep credit if you are going to edit it. Join @Its_UltronBot
 
 
 import asyncio
@@ -33,7 +33,7 @@ async def _(event):
         await edit_or_reply(event, "**SAVING OUTPUT TO W2HBOT LOCAL DATABASE**")
         await asyncio.sleep(3.5)
         await edit_or_reply(event, 
-            "Your[W2HBOT](https:/t.me/W2H_Userbot) is working Fine...\n       Join @W2HSupport For Any Help......"
+            "Your[W2HBOT](https:/t.me/Its_UltronBot) is working Fine...\n       Join @UltronBot_Support For Any Help......"
         )
 
 CmdHelp("test").add_command(

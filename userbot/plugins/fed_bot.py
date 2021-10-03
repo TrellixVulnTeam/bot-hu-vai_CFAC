@@ -439,7 +439,7 @@ async def _(event):
         lavde = event.pattern_match.group(1)
         user = lavde
     if lavde == "":
-        await W2H.edit(
+        await ultron.edit(
             "`Need username/id to check fstat`"
         )
         return
@@ -458,13 +458,13 @@ async def _(event):
                         event.chat_id,
                         massive,
                         thumb=thumb,
-                        caption=f"List of feds {user} has been banned in.\n\n**⚡ [Collected using W2HBOT](t.me/W2H_Userbot) ⚡**",
+                        caption=f"List of feds {user} has been banned in.\n\n**⚡ [Collected using W2HBOT](t.me/Its_UltronBot) ⚡**",
                     )
                 else:
                     await borg.send_message(event.chat_id, massive.text)
                 await event.delete()
             except YouBlockedUserError:
-                await W2H.edit("`Please Unblock` @MissRose_Bot")
+                await ultron.edit("`Please Unblock` @MissRose_Bot")
 
 
 @W2HBOT.on(admin_cmd(pattern="fedinfo ?(.*)"))
@@ -480,9 +480,9 @@ async def _(event):
             await conv.get_response()
             await conv.send_message("/fedinfo " + lavde)
             massive = await conv.get_response()
-            await W2H.edit(massive.text + "\n\n**LEGENDARY_AF_W2HBOT**")
+            await ultron.edit(massive.text + "\n\n**LEGENDARY_AF_W2HBOT**")
         except YouBlockedUserError:
-            await W2H.edit("`Please Unblock` @MissRose_Bot")
+            await ultron.edit("`Please Unblock` @MissRose_Bot")
             
 
 CmdHelp("fed_bot").add_command(

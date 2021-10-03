@@ -28,13 +28,13 @@ pm_caption ="**ᴡ2ʜʙᴏᴛ Is ᴘʀᴇsᴇɴᴛɪɴɢ ʙᴇsᴛᴇsᴛ ʙᴏ�
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
 pm_caption += f"**┣★ ᴍᴀsᴛᴇʀ : {mention}**\n"
 pm_caption += f"**┣★ ᴛᴇʟᴇᴛʜᴏɴ : `{version.__version__}`**\n"
-pm_caption += f"**┣★ ᴡ2ʜʙᴏᴛ : {W2Hversion}**\n"
+pm_caption += f"**┣★ ᴡ2ʜʙᴏᴛ : {ultronversion}**\n"
 pm_caption += f"**┣★ sᴜᴅᴏ       : `{sudou}`**\n"
-pm_caption += f"**┣★ ᴄʜᴀɴɴᴇʟ   : [Join Here](https://t.me/W2H_Userbot)**\n"
+pm_caption += f"**┣★ ᴄʜᴀɴɴᴇʟ   : [Join Here](https://t.me/Its_UltronBot)**\n"
 pm_caption += f"**┣★ ᴄʀᴇᴀᴛᴏʀ    : [W2H Here](https://t.me/David99q)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/W2HGalaxy-OP/W2HBOT) 🔹 [📜License📜](https://github.com/W2HGalaxy-OP/W2HBOT/blob/master/LICENSE)"
+pm_caption += "    [✨REPO✨](https://github.com/MickeyxD/W2HBOT) 🔹 [📜License📜](https://github.com/MickeyxD/W2HBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))

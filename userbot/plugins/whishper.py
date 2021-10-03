@@ -1,4 +1,4 @@
-# Made by @David99q for @W2H_Userbot
+# Made by @David99q for @Its_UltronBot
 
 from W2HBOT.utils import *
 from userbot.cmdhelp import CmdHelp

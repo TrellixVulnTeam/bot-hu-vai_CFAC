@@ -12,15 +12,15 @@ from W2HBOT import CmdHelp, bot as W2HBOT
 
 @W2HBOT.on(admin_cmd("gencc$"))
 @W2HBOT.on(sudo_cmd("gencc$", allow_sudo=True))
-async def _(W2Hevent):
-    if W2Hevent.fwd_from:
+async def _(ultronevent):
+    if ultronevent.fwd_from:
         return
-    W2Hcc = Faker()
-    W2Hname = W2Hcc.name()
-    W2Hadre = W2Hcc.address()
-    W2Hcard = W2Hcc.credit_card_full()
+    ultroncc = Faker()
+    ultronname = ultroncc.name()
+    ultronadre = ultroncc.address()
+    ultroncard = ultroncc.credit_card_full()
     
-    await edit_or_reply(W2Hevent, f"__**👤 NAME :- **__\n`{W2Hname}`\n\n__**🏡 ADDRESS :- **__\n`{W2Hadre}`\n\n__**💸 CARD :- **__\n`{W2Hcard}`")
+    await edit_or_reply(ultronevent, f"__**👤 NAME :- **__\n`{ultronname}`\n\n__**🏡 ADDRESS :- **__\n`{ultronadre}`\n\n__**💸 CARD :- **__\n`{ultroncard}`")
     
 
 @W2HBOT.on(admin_cmd(pattern="bin ?(.*)"))

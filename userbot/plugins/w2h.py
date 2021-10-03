@@ -1,7 +1,7 @@
 import time
 
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, W2Hversion
+from userbot import ALIVE_NAME, StartTime, ultronversion
 from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         W2H_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         W2H_caption += f"     __**BOT STATUS**__\n\n"
         W2H_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        W2H_caption += f"**★ W2HBOT :**`{W2Hversion}`\n"
+        W2H_caption += f"**★ W2HBOT :**`{ultronversion}`\n"
         W2H_caption += f"**★ Uptime :** `{uptime}\n`"
         W2H_caption += f"**★ Master:** {mention}\n"
         await alive.client.send_file(
@@ -80,7 +80,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"      __**BOT STATUS**__\n\n"
             f"**★ Telethon Version :** `{version.__version__}`\n"
-            f"**★ W2HBOT:** `{W2Hversion}`\n"
+            f"**★ W2HBOT:** `{ultronversion}`\n"
             f"**★ Uptime :** `{uptime}\n`"
             f"**★ Master:** {mention}\n",
         )

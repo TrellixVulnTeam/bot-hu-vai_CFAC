@@ -54,25 +54,25 @@ async def _(W2HBOT):
 
 @bot.on(admin_cmd(pattern="awooify$", outgoing=True))
 @bot.on(sudo_cmd(pattern="awooify$", allow_sudo=True))
-async def W2HBOT(W2Hmemes):
-    replied = await W2Hmemes.get_reply_message()
+async def W2HBOT(ultronmemes):
+    replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     if replied.media:
-        W2Hevent = await edit_or_reply(W2Hmemes, "passing to telegraph...")
+        ultronevent = await edit_or_reply(ultronmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
         W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         W2H = Get(W2H)
-        await W2Hmemes.client(W2H)
+        await ultronmemes.client(W2H)
     except BaseException:
         pass
-    download_location = await W2Hmemes.client.download_media(
+    download_location = await ultronmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -80,50 +80,50 @@ async def W2HBOT(W2Hmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await W2Hevent.edit(
+            await ultronevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await W2Hevent.edit("generating image..")
+        await ultronevent.edit("generating image..")
     else:
-        await W2Hevent.edit("the replied file is not supported")
+        await ultronevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await W2Hevent.edit("ERROR: " + str(exc))
+        await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
     W2H = f"https://telegra.ph{response[0]}"
     W2H = await awooify(W2H)
-    await W2Hevent.delete()
-    await W2Hmemes.client.send_file(W2Hmemes.chat_id, W2H, reply_to=replied)
+    await ultronevent.delete()
+    await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="lolice$"))
 @bot.on(sudo_cmd(pattern="lolice$", allow_sudo=True))
-async def W2HBOT(W2Hmemes):
-    replied = await W2Hmemes.get_reply_message()
+async def W2HBOT(ultronmemes):
+    replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     if replied.media:
-        W2Hevent = await edit_or_reply(W2Hmemes, "passing to telegraph...")
+        ultronevent = await edit_or_reply(ultronmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
         W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         W2H = Get(W2H)
-        await W2Hmemes.client(W2H)
+        await ultronmemes.client(W2H)
     except BaseException:
         pass
-    download_location = await W2Hmemes.client.download_media(
+    download_location = await ultronmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -131,50 +131,50 @@ async def W2HBOT(W2Hmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await W2Hevent.edit(
+            await ultronevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await W2Hevent.edit("generating image..")
+        await ultronevent.edit("generating image..")
     else:
-        await W2Hevent.edit("the replied file is not supported")
+        await ultronevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await W2Hevent.edit("ERROR: " + str(exc))
+        await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
     W2H = f"https://telegra.ph{response[0]}"
     W2H = await lolice(W2H)
-    await W2Hevent.delete()
-    await W2Hmemes.client.send_file(W2Hmemes.chat_id, W2H, reply_to=replied)
+    await ultronevent.delete()
+    await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="bun$"))
 @bot.on(sudo_cmd(pattern="bun$", allow_sudo=True))
-async def W2HBOT(W2Hmemes):
-    replied = await W2Hmemes.get_reply_message()
+async def W2HBOT(ultronmemes):
+    replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     if replied.media:
-        W2Hevent = await edit_or_reply(W2Hmemes, "passing to telegraph...")
+        ultronevent = await edit_or_reply(ultronmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
         W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         W2H = Get(W2H)
-        await W2Hmemes.client(W2H)
+        await ultronmemes.client(W2H)
     except BaseException:
         pass
-    download_location = await W2Hmemes.client.download_media(
+    download_location = await ultronmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -182,50 +182,50 @@ async def W2HBOT(W2Hmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await W2Hevent.edit(
+            await ultronevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await W2Hevent.edit("generating image..")
+        await ultronevent.edit("generating image..")
     else:
-        await W2Hevent.edit("the replied file is not supported")
+        await ultronevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await W2Hevent.edit("ERROR: " + str(exc))
+        await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
     W2H = f"https://telegra.ph{response[0]}"
     W2H = await baguette(W2H)
-    await W2Hevent.delete()
-    await W2Hmemes.client.send_file(W2Hmemes.chat_id, W2H, reply_to=replied)
+    await ultronevent.delete()
+    await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="iphx$"))
 @bot.on(sudo_cmd(pattern="iphx$", allow_sudo=True))
-async def W2HBOT(W2Hmemes):
-    replied = await W2Hmemes.get_reply_message()
+async def W2HBOT(ultronmemes):
+    replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     if replied.media:
-        W2Hevent = await edit_or_reply(W2Hmemes, "passing to telegraph...")
+        ultronevent = await edit_or_reply(ultronmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(W2Hmemes, "reply to a supported media file")
+        await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
         W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         W2H = Get(W2H)
-        await W2Hmemes.client(W2H)
+        await ultronmemes.client(W2H)
     except BaseException:
         pass
-    download_location = await W2Hmemes.client.download_media(
+    download_location = await ultronmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -233,27 +233,27 @@ async def W2HBOT(W2Hmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await W2Hevent.edit(
+            await ultronevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await W2Hevent.edit("generating image..")
+        await ultronevent.edit("generating image..")
     else:
-        await W2Hevent.edit("the replied file is not supported")
+        await ultronevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await W2Hevent.edit("ERROR: " + str(exc))
+        await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
     W2H = f"https://telegra.ph{response[0]}"
     W2H = await iphonex(W2H)
-    await W2Hevent.delete()
-    await W2Hmemes.client.send_file(W2Hmemes.chat_id, W2H, reply_to=replied)
+    await ultronevent.delete()
+    await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 CmdHelp("mask").add_command(

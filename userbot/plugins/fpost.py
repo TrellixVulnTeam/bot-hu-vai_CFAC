@@ -16,12 +16,12 @@ groupsid = []
 
 
 async def all_groups_id(W2H):
-    W2Hgroups = []
-    async for dialog in W2H.client.iter_dialogs():
+    ultrongroups = []
+    async for dialog in ultron.client.iter_dialogs():
         entity = dialog.entity
         if isinstance(entity, Channel) and entity.megagroup:
-            W2Hgroups.append(entity.id)
-    return W2Hgroups
+            ultrongroups.append(entity.id)
+    return ultrongroups
 
 
 @bot.on(admin_cmd(pattern="frwd$"))

@@ -36,28 +36,28 @@ async def payf(event):
 @bot.on(admin_cmd(pattern="cat$"))
 @bot.on(sudo_cmd(pattern="cat$", allow_sudo=True))
 async def hmm(W2H):
-    if W2H.fwd_from:
+    if ultron.fwd_from:
         return
     reactcat = nekos.textcat()
-    await edit_or_reply(W2H, reactcat)
+    await edit_or_reply(ultron, reactcat)
 
 
 @bot.on(admin_cmd(pattern="why$"))
 @bot.on(sudo_cmd(pattern="why$", allow_sudo=True))
 async def hmm(W2H):
-    if W2H.fwd_from:
+    if ultron.fwd_from:
         return
-    whyW2H = nekos.why()
-    await edit_or_reply(W2H, whyW2H)
+    whyultron. = nekos.why()
+    await edit_or_reply(ultron, whyultron.)
 
 
 @bot.on(admin_cmd(pattern="fact$"))
 @bot.on(sudo_cmd(pattern="fact$", allow_sudo=True))
 async def hmm(W2H):
-    if W2H.fwd_from:
+    if ultron.fwd_from:
         return
-    factW2H = nekos.fact()
-    await edit_or_reply(W2H, factW2H)
+    factultron. = nekos.fact()
+    await edit_or_reply(ultron, factultron.)
 
 
 CmdHelp("funtxts").add_command(

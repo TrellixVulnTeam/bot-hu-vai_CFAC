@@ -57,9 +57,9 @@ async def who(event):
         )
         if not photo.startswith("http"):
             os.remove(photo)
-        await W2H.delete()
+        await ultron.delete()
     except TypeError:
-        await W2H.edit(caption, parse_mode="html")
+        await ultron.edit(caption, parse_mode="html")
 
 
 async def get_user(event):

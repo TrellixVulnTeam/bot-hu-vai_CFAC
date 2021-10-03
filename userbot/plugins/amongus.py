@@ -60,42 +60,42 @@ async def _(event):
     stcr4 = await event.client.send_file(
         event.chat_id, "CAADAQADLwADnjOcH-wxu-ehy6NRAg"
     )
-    W2Hevent = await event.reply(f"{name} is ejected.......🤐")
+    ultronevent = await event.reply(f"{name} is ejected.......🤐")
     await asyncio.sleep(2)
-    await W2Hevent.edit("ඞㅤㅤㅤㅤ ㅤㅤㅤㅤ")
+    await ultronevent.edit("ඞㅤㅤㅤㅤ ㅤㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤඞㅤㅤㅤㅤ ㅤㅤㅤ")
+    await ultronevent.edit("ㅤඞㅤㅤㅤㅤ ㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤ ඞㅤㅤㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤ ඞㅤㅤㅤㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤ ඞㅤㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤ ඞㅤㅤㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤ ඞㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤ ඞㅤㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤ ඞㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤ ඞㅤㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤ ඞㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤ ඞㅤㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤ ඞㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤ ඞㅤ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ඞ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ඞ")
     await asyncio.sleep(0.5)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ")
     await asyncio.sleep(0.2)
     await stcr4.delete()
     if cmd == "":
-        await W2Hevent.edit(
+        await ultronevent.edit(
             f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} was an Imposter.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
         await asyncio.sleep(4)
-        await W2Hevent.delete()
+        await ultronevent.delete()
         await event.client.send_file(event.chat_id, "CAADAQADLQADnjOcH39IqwyR6Q_0Ag")
     elif cmd == "n":
-        await W2Hevent.edit(
+        await ultronevent.edit(
             f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} was not an Imposter.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
         await asyncio.sleep(4)
-        await W2Hevent.delete()
+        await ultronevent.delete()
         await event.client.send_file(event.chat_id, "CAADAQADQAADnjOcH-WOkB8DEctJAg")
 
 
@@ -106,34 +106,34 @@ async def _(event):
         return
     name = event.pattern_match.group(2)
     cmd = event.pattern_match.group(1).lower()
-    W2Hevent = await edit_or_reply(event, f"{name} is ejected.......")
+    ultronevent = await edit_or_reply(event, f"{name} is ejected.......")
     await asyncio.sleep(2)
-    await W2Hevent.edit("ඞㅤㅤㅤㅤ ㅤㅤㅤㅤ")
+    await ultronevent.edit("ඞㅤㅤㅤㅤ ㅤㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤඞㅤㅤㅤㅤ ㅤㅤㅤ")
+    await ultronevent.edit("ㅤඞㅤㅤㅤㅤ ㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤ ඞㅤㅤㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤ ඞㅤㅤㅤㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤ ඞㅤㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤ ඞㅤㅤㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤ ඞㅤㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤ ඞㅤㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤ ඞㅤㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤ ඞㅤㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤ ඞㅤㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤ ඞㅤㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤ ඞㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤ ඞㅤ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ඞ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ඞ")
     await asyncio.sleep(0.8)
-    await W2Hevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ")
+    await ultronevent.edit("ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ")
     await asyncio.sleep(0.2)
     if cmd == "":
-        await W2Hevent.edit(
+        await ultronevent.edit(
             f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} was an Imposter.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
     elif cmd == "n":
-        await W2Hevent.edit(
+        await ultronevent.edit(
             f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} was not an Imposter.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
 

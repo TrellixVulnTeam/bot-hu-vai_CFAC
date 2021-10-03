@@ -115,12 +115,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                W2Hreg = "^" + Config.COMMAND_HAND_LER
+                ultronreg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                W2Hreg = "^\\" + Config.COMMAND_HAND_LER
+                ultronreg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(W2Hreg + pattern)
+            args["pattern"] = re.compile(ultronreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -180,12 +180,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                W2Hreg = "^" + Config.SUDO_COMMAND_HAND_LER
+                ultronreg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                W2Hreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                ultronreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(W2Hreg + pattern)
+            args["pattern"] = re.compile(ultronreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -290,7 +290,7 @@ async def delete_W2H(event, text, time=None, parse_mode=None, link_preview=None)
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        W2Hevent = (
+        ultronevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -298,11 +298,11 @@ async def delete_W2H(event, text, time=None, parse_mode=None, link_preview=None)
             )
         )
     else:
-        W2Hevent = await event.edit(
+        ultronevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await W2Hevent.delete()
+    return await ultronevent.delete()
 
 # from paperplaneextended
 on = bot.on

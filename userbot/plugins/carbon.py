@@ -48,7 +48,7 @@ async def carbon_api(e):
         executable_path=Config.CHROME_DRIVER, options=chrome_options
     )
     driver.get(url)
-    await W2H.edit("`Be Patient...\n50%`")
+    await ultron.edit("`Be Patient...\n50%`")
     download_path = "./"
     driver.command_executor._commands["send_command"] = (
         "POST",
@@ -62,12 +62,12 @@ async def carbon_api(e):
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await W2H.edit("`Processing..\n75%`")
+    await ultron.edit("`Processing..\n75%`")
     # Waiting for downloading
     await asyncio.sleep(2)
-    await W2H.edit("`Done Dana Done...\n100%`")
+    await ultron.edit("`Done Dana Done...\n100%`")
     file = "./carbon.png"
-    await W2H.edit("`Uploading..`")
+    await ultron.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -78,7 +78,7 @@ async def carbon_api(e):
     os.remove("./carbon.png")
     driver.quit()
     # Removing carbon.png after uploading
-    await W2H.delete()
+    await ultron.delete()
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="krb"))
@@ -102,7 +102,7 @@ async def carbon_api(e):
         skeme = None  # Importing message to module
     pcode = deEmojify(pcode)
     code = quote_plus(pcode)  # Converting to urlencoded
-    await W2H.edit("`Meking Carbon...`\n`25%`")
+    await ultron.edit("`Meking Carbon...`\n`25%`")
     url = CARBON.format(code=code, lang=CARBONLANG)
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -117,7 +117,7 @@ async def carbon_api(e):
         executable_path=Config.CHROME_DRIVER, options=chrome_options
     )
     driver.get(url)
-    await W2H.edit("`Be Patient...\n50%`")
+    await ultron.edit("`Be Patient...\n50%`")
     download_path = "./"
     driver.command_executor._commands["send_command"] = (
         "POST",
@@ -144,15 +144,15 @@ async def carbon_api(e):
     driver.find_element_by_id("export-menu").click()
     driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
     driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await W2H.edit("`Processing..\n75%`")
+    await ultron.edit("`Processing..\n75%`")
     # Waiting for downloading
     await asyncio.sleep(2.5)
     color_name = driver.find_element_by_xpath(
         "/html/body/div[1]/main/div[3]/div[2]/div[1]/div[1]/div/span[2]/input"
     ).get_attribute("value")
-    await W2H.edit("`Done Dana Done...\n100%`")
+    await ultron.edit("`Done Dana Done...\n100%`")
     file = "./carbon.png"
-    await W2H.edit("`Uploading..`")
+    await ultron.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -162,7 +162,7 @@ async def carbon_api(e):
     )
     os.remove("./carbon.png")
     driver.quit()
-    await W2H.delete()
+    await ultron.delete()
 
 
 @bot.on(admin_cmd(pattern=f"kar1(?: |$)(.*)", outgoing=True))
@@ -191,7 +191,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("🔳🔳🔲🔲🔲")
+    await ultron.edit("🔳🔳🔲🔲🔲")
 
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
@@ -210,11 +210,11 @@ async def carbon_api(e):
 
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     await asyncio.sleep(2)
-    await W2H.edit("🔳🔳🔳🔲🔲")
+    await ultron.edit("🔳🔳🔳🔲🔲")
     await asyncio.sleep(2)
-    await W2H.edit("🔳🔳🔳🔳🔳")
+    await ultron.edit("🔳🔳🔳🔳🔳")
     file = "./carbon.png"
-    await W2H.edit("☣️Karbon1 Completed, Uploading Karbon☣️")
+    await ultron.edit("☣️Karbon1 Completed, Uploading Karbon☣️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -223,7 +223,7 @@ async def carbon_api(e):
     )
     os.remove("./carbon.png")
     # Removing carbon.png after uploading
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 @bot.on(admin_cmd(pattern=f"kar2(?: |$)(.*)", outgoing=True))
@@ -252,7 +252,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("🔘🔘📛📛📛")
+    await ultron.edit("🔘🔘📛📛📛")
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
     )
@@ -269,11 +269,11 @@ async def carbon_api(e):
     driver.execute("send_command", params)
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     await asyncio.sleep(2)
-    await W2H.edit("🔘🔘🔘📛📛")
+    await ultron.edit("🔘🔘🔘📛📛")
     await asyncio.sleep(2)  # Waiting for downloading
-    await W2H.edit("🔘🔘🔘🔘🔘")
+    await ultron.edit("🔘🔘🔘🔘🔘")
     file = "./carbon.png"
-    await W2H.edit("☣️Karbon2 Completed, Uploading Karbon☣️")
+    await ultron.edit("☣️Karbon2 Completed, Uploading Karbon☣️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -284,7 +284,7 @@ async def carbon_api(e):
 
     os.remove("./carbon.png")
     # Removing carbon.png after uploading
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 @bot.on(admin_cmd(pattern=f"kar3(?: |$)(.*)", outgoing=True))
@@ -313,7 +313,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("🔵🔵🎛🎛🎛")
+    await ultron.edit("🔵🔵🎛🎛🎛")
 
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
@@ -332,13 +332,13 @@ async def carbon_api(e):
 
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     await asyncio.sleep(2)
-    await W2H.edit("🔵🔵🔵🎛🎛")
+    await ultron.edit("🔵🔵🔵🎛🎛")
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
     await asyncio.sleep(2)  # Waiting for downloading
 
-    await W2H.edit("🔵🔵🔵🔵🔵")
+    await ultron.edit("🔵🔵🔵🔵🔵")
     file = "./carbon.png"
-    await W2H.edit("☣️Karbon3 Completed, Uploading Karbon⬆️")
+    await ultron.edit("☣️Karbon3 Completed, Uploading Karbon⬆️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -349,7 +349,7 @@ async def carbon_api(e):
 
     os.remove("./carbon.png")
     # Removing carbon.png after uploading
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 @bot.on(admin_cmd(pattern=f"kar4(?: |$)(.*)", outgoing=True))
@@ -378,7 +378,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("🌝🌝🌚🌚🌚")
+    await ultron.edit("🌝🌝🌚🌚🌚")
 
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
@@ -397,13 +397,13 @@ async def carbon_api(e):
 
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     await asyncio.sleep(2)
-    await W2H.edit("🌝🌝🌝🌚🌚")
+    await ultron.edit("🌝🌝🌝🌚🌚")
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
     await asyncio.sleep(2)  # Waiting for downloading
 
-    await W2H.edit("🌝🌝🌝🌝🌝")
+    await ultron.edit("🌝🌝🌝🌝🌝")
     file = "./carbon.png"
-    await W2H.edit("✅Karbon4 Completed, Uploading Karbon✅")
+    await ultron.edit("✅Karbon4 Completed, Uploading Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -414,7 +414,7 @@ async def carbon_api(e):
 
     os.remove("./carbon.png")
     # Removing carbon.png after uploading
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 @bot.on(admin_cmd(pattern=f"rgbk2(?: |$)(.*)", outgoing=True))
@@ -446,7 +446,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("⬛⬛⬜⬜⬜")
+    await ultron.edit("⬛⬛⬜⬜⬜")
 
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
@@ -467,13 +467,13 @@ async def carbon_api(e):
     await asyncio.sleep(2)  # this might take a bit.
     # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
     # await asyncio.sleep(5)
-    await W2H.edit("⬛⬛⬛⬜⬜")
+    await ultron.edit("⬛⬛⬛⬜⬜")
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
     await asyncio.sleep(2)  # Waiting for downloading
 
-    await W2H.edit("⬛⬛⬛⬛⬛")
+    await ultron.edit("⬛⬛⬛⬛⬛")
     file = "./carbon.png"
-    await W2H.edit("✅RGB Karbon 2.0 Completed, Uploading Karbon✅")
+    await ultron.edit("✅RGB Karbon 2.0 Completed, Uploading Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -483,7 +483,7 @@ async def carbon_api(e):
     )
     os.remove("./carbon.png")
     # Removing carbon.png after uploading
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 @bot.on(admin_cmd(pattern=f"kargb(?: |$)(.*)", outgoing=True))
@@ -547,7 +547,7 @@ async def carbon_api(e):
     chrome_options.add_argument("--disable-gpu")
     prefs = {"download.default_directory": "./"}
     chrome_options.add_experimental_option("prefs", prefs)
-    await W2H.edit("⬛⬛⬜⬜⬜")
+    await ultron.edit("⬛⬛⬜⬜⬜")
 
     driver = webdriver.Chrome(
         executable_path=Config.CHROME_DRIVER, options=chrome_options
@@ -567,12 +567,12 @@ async def carbon_api(e):
     await asyncio.sleep(2)  # this might take a bit.
     #  driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
     # await asyncio.sleep(5)
-    await W2H.edit("⬛⬛⬛⬜⬜")
+    await ultron.edit("⬛⬛⬛⬜⬜")
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
     await asyncio.sleep(2)  # Waiting for downloading
-    await W2H.edit("⬛⬛⬛⬛⬛")
+    await ultron.edit("⬛⬛⬛⬛⬛")
     file = "./carbon.png"
-    await W2H.edit("✅RGB Karbon Completed, Uploading Karbon✅")
+    await ultron.edit("✅RGB Karbon Completed, Uploading Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -581,7 +581,7 @@ async def carbon_api(e):
         reply_to=e.message.reply_to_msg_id,
     )
     os.remove("./carbon.png")
-    await W2H.delete()  # Deleting msg
+    await ultron.delete()  # Deleting msg
 
 
 CmdHelp("carbon").add_command(

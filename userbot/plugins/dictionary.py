@@ -39,7 +39,7 @@ async def _(event):
     W2H = dictionary.meaning(word)
     output = f"**Word :** __{word}__\n\n"
     try:
-        for a, b in W2H.items():
+        for a, b in ultron.items():
             output += f"**{a}**\n"
             for i in b:
                 output += f"☞__{i}__\n"

@@ -497,7 +497,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 songh,
-                caption="🔆**Here's the requested song!**🔆\n`Check out` [W2HBOT](https://t.me/W2HSupport)",
+                caption="🔆**Here's the requested song!**🔆\n`Check out` [W2HBOT](https://t.me/UltronBot_Support)",
             )
             await event.delete()
         except YouBlockedUserError:

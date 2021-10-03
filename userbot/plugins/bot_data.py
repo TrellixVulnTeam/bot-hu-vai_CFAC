@@ -26,7 +26,7 @@ async def _(event):
     result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
     result = result.stringify()
     logger.info(result)  # pylint:disable=E0602
-    await event.edit("""Telethon UserBot powered by @W2H_Userbot""")
+    await event.edit("""Telethon UserBot powered by @Its_UltronBot""")
 
 CmdHelp("bot").add_command(
   "dc", None, "Gets the DataCenter Number"

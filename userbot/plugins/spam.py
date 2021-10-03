@@ -35,15 +35,15 @@ async def spammer(e):
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
 async def bigspam(W2H):
-    if not W2H.text[0].isalpha() and W2H.text[0] not in ("/", "#", "@", "!"):
-        W2H_msg = W2H.text
+    if not ultron.text[0].isalpha() and ultron.text[0] not in ("/", "#", "@", "!"):
+        W2H_msg = ultron.text
         W2HBOT_count = int(W2H_msg[9:13])
-        W2H_spam = str(W2H.text[13:])
+        W2H_spam = str(ultron.text[13:])
         for i in range(1, W2HBOT_count):
-            await W2H.respond(W2H_spam)
-        await W2H.delete()
+            await ultron.respond(W2H_spam)
+        await ultron.delete()
         if LOGGER:
-            await W2H.client.send_message(
+            await ultron.client.send_message(
                 LOGGER_GROUP, "#BIGSPAM \n\n" "Bigspam was executed successfully"
             )
 
