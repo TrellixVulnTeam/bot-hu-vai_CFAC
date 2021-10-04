@@ -68,17 +68,15 @@
 
 <h1 align="center">TO HOST LEGEND LOCALLY OR ON ANY OTHER VPS CLICK BELOW</h1>
 
-<h2 align="center"> <a href="https://github.com/LEGEND-OS/LEGENDUSERBOT">⚡ 𝕷êgèñd𝕭øt ⚡</a></h2>
-
 ------------
 # Do U Face Any Problem Contact me Through Telegram 
 
-<a href="https://t.me/Legend_Userbot"><img src="https://img.shields.io/badge/Legend%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/ULTRONBOT_SUPPORT"><img src="https://img.shields.io/badge/ULTRON%20GROUP-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-<a href="https://t.me/Its_LegendBoy"><img src="https://img.shields.io/badge/CREATOR%20ME-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/M1CKEY_0P"><img src="https://img.shields.io/badge/CREATOR%20ME-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Its_LegendBoy)
+[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/M1CKEY_0P)
 
 
 <details>
@@ -115,7 +113,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
   <summary> • 💡 CREDITS 💞 • </summary>
   
-• [MICKEY0P](https://github.com/MickeyxD)
+• [MICKEY0P™🇮🇳](https://github.com/MickeyxD)
 
 
 
