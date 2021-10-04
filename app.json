@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/W2HGalaxy-OP/W2HBot/",
-  "website": "https://github.com/W2HGalaxy-OP/W2HBot/",
-  "success_url": "https://t.me/W2HUserbot",
+  "repository": "https://github.com/MickeyxD/Ultronuserbot/",
+  "website": "https://github.com/MickeyxD/Ultronuserbot/",
+  "success_url": "https://t.me/Its_UltronBot",
   "env": {
     "ENV": {
       "description": "Set this to ANYTHING will enable heroku.",
