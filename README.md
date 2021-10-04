@@ -6,11 +6,11 @@
 
 
 <p align="center">
-<a href="https://github.com/LEGEND-OS/LEGENDBOT" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/MickeyxD/Ultronuserbot?style=flat&logo=github&color=success" /> </a>
-<a href="https://github.com/LEGEND-OS/LEGENDBOT/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/MickeyxD/Ultronuserbot?style=flat&logo=github" /> </a>
-<a href="https://github.com/LEGEND-OS/LEGENDBOT/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/MickeyxD/Ultronuserbot?label=Forks&logo=github" /> </a>
-<a href="https://github.com/LEGEND-OS/LEGENDBOT" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/MickeyxD/Ultronuserbot?color=success" /> </a>
-<a href="https://github.com/LEGEND-OS/LEGENDBOT" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/MickeyxD/Ultronuserbot?style=flat&logo=github&color=yellow" /> </a>
+<a href="https://github.com/MickeyxD/Ultronuserbot" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/MickeyxD/Ultronuserbot?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/MickeyxD/Ultronuserbot/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/MickeyxD/Ultronuserbot?style=flat&logo=github" /> </a>
+<a href="https://github.com/MickeyxD/Ultronuserbot/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/MickeyxD/Ultronuserbot?label=Forks&logo=github" /> </a>
+<a href="https://github.com/MickeyxD/Ultronuserbot" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/MickeyxD/Ultronuserbot?color=success" /> </a>
+<a href="https://github.com/MickeyxD/Ultronuserbot" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/MickeyxD/Ultronuserbot?style=flat&logo=github&color=yellow" /> </a>
 </p>
 <p align="center">
 <a href="https://github.com/MickeyxD/Ultronuserbot" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/v/release/MickeyxD/Ultronuserbot?include_prereleases?style=flat&logo=github" /> </a>
