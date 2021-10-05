@@ -1,11 +1,10 @@
-
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 import random
 from colorama import Fore, Style, Back
 
 
-legend = """
+aura = """
 ╔╗──╔═══╦═══╦═══╦═╗─╔╦═══╦═══╦═══╦╗──╔╗
 ║║──║╔══╣╔═╗║╔══╣║╚╗║╠╗╔╗║╔═╗║╔═╗║╚╗╔╝║  
 ║║──║╚══╣║─╚╣╚══╣╔╗╚╝║║║║║║─║║╚═╝╠╗╚╝╔╝  
@@ -13,13 +12,22 @@ legend = """
 ║╚═╝║╚══╣╚╩═║╚══╣║─║║╠╝╚╝║╔═╗║║║╚╗─║║   
 ╚═══╩═══╩═══╩═══╩╝─╚═╩═══╩╝─╚╩╝╚═╝─╚╝   
 """
+logo = """
+
+╭╮╱╭┳╮╱╭━━━━┳━━━┳━━━┳━╮╱╭┳━━╮╭━━━┳━━━━╮
+┃┃╱┃┃┃╱┃╭╮╭╮┃╭━╮┃╭━╮┃┃╰╮┃┃╭╮┃┃╭━╮┃╭╮╭╮┃
+┃┃╱┃┃┃╱╰╯┃┃╰┫╰━╯┃┃╱┃┃╭╮╰╯┃╰╯╰┫┃╱┃┣╯┃┃╰╯
+┃┃╱┃┃┃╱╭╮┃┃╱┃╭╮╭┫┃╱┃┃┃╰╮┃┃╭━╮┃┃╱┃┃╱┃┃
+┃╰━╯┃╰━╯┃┃┃╱┃┃┃╰┫╰━╯┃┃╱┃┃┃╰━╯┃╰━╯┃╱┃┃
+╰━━━┻━━━╯╰╯╱╰╯╰━┻━━━┻╯╱╰━┻━━━┻━━━╯╱╰╯
+"""
 baap_bolte = """
 #Legendary ULTRONBOT          
 Made With Love By Team ULTRONBOT
 """
                                                                                                             
 print("")
-print(Style.BRIGHT + Fore.MAGENTA + legend)
+print(Style.BRIGHT + Fore.MAGENTA + aura)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
@@ -39,7 +47,7 @@ while True:
             session = client.session.save()
             client.send_message(
                 "me",
-                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @ULTRON_Userbot For Any Help !",
+                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @its_UltronBot For Any Help !",
             )
 
             print(
@@ -53,3 +61,4 @@ while True:
         print("")
         continue
     break
+
