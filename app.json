@@ -1,6 +1,6 @@
 {
-  "name": "W2HBot",
-  "description": "The best userbot made by @david99q. Made with Love... ❤ For Support Join @W2H_Userbot ",
+  "name": "UltronBot",
+  "description": "The best userbot made by @M1CKEY_0P. Made with Love... ❤ For Support Join @ULTRONBOT_SUPPORT ",
   "logo": "https://telegra.ph/file/cee753391111580ae8a0c.jpg",
     "keywords": [
     "telegram",
@@ -24,22 +24,22 @@
     },
     "ALIVE_NAME": {
       "description": "Fill your Full name. By default it is W2H User",
-      "value": "W2H User",
+      "value": "Ultron User",
       "required": false
     },
     "ALIVE_MSG": {
       "description": "Set Custom Alive Message When entering .W2H Command.",
-      "value": "Legend's W2HBot Is Alive",
+      "value": "Legend's UltronBot Is Alive",
       "required": false
     },
     "ALIVE_PIC": {
-      "description": "Put here any telegraph media link for alive pic in .W2H command.",
+      "description": "Put here any telegraph media link for alive pic in .ultron command.",
       "value": "https://telegra.ph/file/dcc486b26e6cd3fbf171d.jpg",
       "required": false
     },
     "BIO_MSG": {
       "description": "Put Your Telegram Bio Here Required For Auto Bio.",
-      "value": "I am a legend. Bcoz i am W2H User",
+      "value": "I am a legend. Bcoz i am Ultron User",
       "required": false
     },
     "PMPERMIT_PIC": {
@@ -107,7 +107,7 @@
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Get this value by running https://repl.it/@GalaxyOp/W2HBOT#main.py ",
+      "description": "Get this value by running https://repl.it/@D15H4NT0P/ULTRONUSERBOT#main.py ",
       "value": ""
     },
     "HEROKU_API_KEY": {
