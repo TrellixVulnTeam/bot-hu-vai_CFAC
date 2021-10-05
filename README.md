@@ -58,7 +58,7 @@
 
 ### StringSession
 
-[![String](https://telegra.ph/file/353fdaccb5fc45363e64d.jpg)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
+[![String](https://telegra.ph/file/353fdaccb5fc45363e64d.jpg)](https://replit.com/@D15H4NT0P/ULTRONUSERBOT) 
 
     - Click On Generate String
     - Then Click On Green Run Button.
