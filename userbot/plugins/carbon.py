@@ -8,10 +8,10 @@ from selenium.webdriver.chrome.options import Options
 
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.helpers.functions import deEmojify
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "W2H User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ULTRON User"
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -33,7 +33,7 @@ async def carbon_api(e):
         pcode = str(textx.message)  # Importing message to module
     pcode = deEmojify(pcode)
     code = quote_plus(pcode)  # Converting to urlencoded
-    W2H = await edit_or_reply(e, "`Carbonizing...\n25%`")
+    ULTRON = await edit_or_reply(e, "`Carbonizing...\n25%`")
     url = CARBON.format(code=code, lang=CARBONLANG)
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -71,7 +71,7 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Here's your carbon, \n Carbonised by W2HBOT",
+        caption="Here's your carbon, \n Carbonised by ULTRONBOT",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -86,7 +86,7 @@ async def carbon_api(e):
 async def carbon_api(e):
     if e.fwd_from:
         return
-    W2H = await edit_or_reply(e, "`Processing....`")
+    ULTRON = await edit_or_reply(e, "`Processing....`")
     CARBON = "https://carbon.now.sh/?l={lang}&code={code}"
     textx = await e.get_reply_message()
     pcode = e.text
@@ -171,7 +171,7 @@ async def carbon_api(e):
     if e.fwd_from:
         return
     """ A Wrapper for carbon.now.sh """
-    W2H = await edit_or_reply(e, "🔲🔲🔲🔲🔲")
+    ULTRON = await edit_or_reply(e, "🔲🔲🔲🔲🔲")
     CARBON = "https://carbon.now.sh/?bg=rgba(249%2C237%2C212%2C0)&t=synthwave-84&wt=none&l=application%2Fjson&ds=true&dsyoff=20px&dsblur=0px&wc=true&wa=true&pv=56px&ph=0px&ln=false&fl=1&fm=IBM%20Plex%20Mono&fs=14.5px&lh=153%25&si=false&es=4x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()
@@ -232,7 +232,7 @@ async def carbon_api(e):
     if e.fwd_from:
         return
     """ A Wrapper for carbon.now.sh """
-    W2H = await edit_or_reply(e, "📛📛📛📛📛")
+    ULTRON = await edit_or_reply(e, "📛📛📛📛📛")
     CARBON = "https://carbon.now.sh/?bg=rgba(239%2C40%2C44%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()
@@ -293,7 +293,7 @@ async def carbon_api(e):
     if e.fwd_from:
         return
     """ A Wrapper for carbon.now.sh """
-    W2H = await edit_or_reply(e, "🎛🎛🎛🎛🎛")
+    ULTRON = await edit_or_reply(e, "🎛🎛🎛🎛🎛")
     CARBON = "https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C1)&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()
@@ -358,7 +358,7 @@ async def carbon_api(e):
     if e.fwd_from:
         return
     """ A Wrapper for carbon.now.sh """
-    W2H = await edit_or_reply(e, "🌚🌚🌚🌚🌚")
+    ULTRON = await edit_or_reply(e, "🌚🌚🌚🌚🌚")
     CARBON = "https://carbon.now.sh/?bg=rgba(29%2C40%2C104%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()
@@ -426,7 +426,7 @@ async def carbon_api(e):
     GREEN = random.randint(0, 256)
     BLUE = random.randint(0, 256)
     OPC = random.random()
-    W2H = await edit_or_reply(e, "⬜⬜⬜⬜⬜")
+    ULTRON = await edit_or_reply(e, "⬜⬜⬜⬜⬜")
     CARBON = "https://carbon.now.sh/?bg=rgba({R}%2C{G}%2C{B}%2C{O})&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()
@@ -527,7 +527,7 @@ async def carbon_api(e):
     ]
     CUNTHE = random.randint(0, len(THEME) - 1)
     The = THEME[CUNTHE]
-    W2H = await edit_or_reply(e, "⬜⬜⬜⬜⬜")
+    ULTRON = await edit_or_reply(e, "⬜⬜⬜⬜⬜")
     CARBON = "https://carbon.now.sh/?bg=rgba({R}%2C{G}%2C{B}%2C1)&t={T}&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}"
     CARBONLANG = "en"
     textx = await e.get_reply_message()

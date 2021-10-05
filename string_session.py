@@ -21,8 +21,8 @@ logo = """
 ╱╰╯╰╯╰━━━┻╯╱╰┻━━━┻━━━╯╱╰╯
 """
 baap_bolte = """
-#Legendary W2HBOT          
-Made With Love By Team W2HBOT
+#Legendary ULTRONBOT          
+Made With Love By Team ULTRONBOT
 """
                                                                                                             
 print("")
@@ -32,7 +32,7 @@ print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
 print(Style.RESET_ALL)
-print("""Welcome To W2HBOT String Generator By @David99q""")
+print("""Welcome To ULTRONBOT String Generator By @David99q""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = input("API_KEY: ")
@@ -50,7 +50,7 @@ while True:
             )
 
             print(
-                "Thanks for Choosing W2HBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+                "Thanks for Choosing ULTRONBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
             )
     except:
         print("")

@@ -33,7 +33,7 @@ from urllib.error import HTTPError
 from pySmartDL import SmartDL
 
 from userbot import CMD_HELP, LOGS
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply, humanbytes, time_formatter
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply, humanbytes, time_formatter
 from userbot.cmdhelp import CmdHelp
 
 
@@ -176,7 +176,7 @@ async def mega_downloader(megadl):
 
 
 async def decrypt_file(megadl, file_path, temp_file_path, hex_key, hex_raw_key):
-    cmd = "W2H '{}' | openssl enc -d -aes-128-ctr -K {} -iv {} > '{}'".format(
+    cmd = "ULTRON '{}' | openssl enc -d -aes-128-ctr -K {} -iv {} > '{}'".format(
         temp_file_path, hex_key, hex_raw_key, file_path
     )
     if await subprocess_run(megadl, cmd):

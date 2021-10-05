@@ -5,7 +5,7 @@ from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
 
 from userbot import CMD_HELP
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="stats$"))
@@ -14,7 +14,7 @@ async def stats(
     event: NewMessage.Event,
 ) -> None:  # pylint: disable = R0912, R0914, R0915
     """Command to get stats about the account"""
-    W2H = await edit_or_reply(event, "`Collecting stats...`")
+    ULTRON = await edit_or_reply(event, "`Collecting stats...`")
     start_time = time.time()
     private_chats = 0
     bots = 0
@@ -80,7 +80,7 @@ async def stats(
     response += f"♛ **Unread Mentions:** {unread_mentions} \n\n"
     response += f"🢂   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [W2HBOT](https://t.me/Its_UltronBot)"
+        f"📌 **From The DataBase Of** :- [ULTRONBOT](https://t.me/Its_UltronBot)"
     )
     await ultron.edit(response)
 

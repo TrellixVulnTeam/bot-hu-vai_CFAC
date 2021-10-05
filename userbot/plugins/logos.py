@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
 
 from userbot import *
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP
@@ -58,7 +58,7 @@ async def lg1(ultronevent):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "W2HBOT.png"
+    file_name = "ULTRONBOT.png"
     img.save(file_name, "png")
     await bot.send_file(
         ultronevent.chat_id,

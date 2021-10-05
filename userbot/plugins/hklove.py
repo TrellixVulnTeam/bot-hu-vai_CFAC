@@ -1,8 +1,8 @@
-# PLUGIN MADE BY @David99q FOR W2HBOT
+# PLUGIN MADE BY @David99q FOR ULTRONBOT
 # KEEP CREDITS ELSE GAY
 
 import random, re
-from W2HBOT.utils import admin_cmd
+from ULTRONBOT.utils import admin_cmd
 import asyncio
 from telethon import events	
 @borg.on(admin_cmd(pattern="hklove", outgoing=True))

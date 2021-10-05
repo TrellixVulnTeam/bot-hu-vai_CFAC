@@ -8,12 +8,12 @@ from telethon import events
 from telethon.tl import functions, types
 from userbot import CMD_HELP
 from userbot import ALIVE_NAME, ultronversion
-from W2HBOT.utils import admin_cmd, edit_or_reply
+from ULTRONBOT.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "W2H User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ULTRON User"
 
-W2H = bot.uid
+ULTRON = bot.uid
 
 
 global USER_AFK  # pylint:disable=E0602
@@ -42,7 +42,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        W2HBOT = await borg.send_message(
+        ULTRONBOT = await borg.send_message(
             event.chat_id,
             "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
@@ -65,7 +65,7 @@ async def set_not_afk(event):
                 silent=True,
             )
         await asyncio.sleep(5)
-        await W2HBOT.delete()
+        await ULTRONBOT.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
@@ -96,7 +96,7 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={W2H}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
+            f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={ULTRON}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
             + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
   if reason
             else f"**Heyy!**\n__I am currently unavailable.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"

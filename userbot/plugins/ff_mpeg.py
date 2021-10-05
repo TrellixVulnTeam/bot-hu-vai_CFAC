@@ -5,11 +5,11 @@ import os
 import time
 from datetime import datetime
 
-from W2HBOT.utils import admin_cmd, sudo_cmd, progress
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, progress
 from userbot import CMD_HELP
 from userbot.cmdhelp import CmdHelp
 
-FF_MPEG_DOWN_LOAD_MEDIA_PATH = "./downloads/W2HBOT.media.ffmpeg"
+FF_MPEG_DOWN_LOAD_MEDIA_PATH = "./downloads/ULTRONBOT.media.ffmpeg"
 
 async def reply_id(event):
     reply_to_id = None

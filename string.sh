@@ -23,7 +23,7 @@ echo """
 ╰╮╭╮╭┫┃╰━┫┃╱┃┃╰━╯┃╰━╯┃╱┃┃
 ╱╰╯╰╯╰━━━┻╯╱╰┻━━━┻━━━╯╱╰╯
 
-Legendary W2HBOT
+Legendary ULTRONBOT
 @UltronBot_Support
 """
 

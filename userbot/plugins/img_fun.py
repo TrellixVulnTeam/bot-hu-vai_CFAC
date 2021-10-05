@@ -6,8 +6,8 @@ from typing import Optional, Tuple
 from PIL import Image, ImageDraw, ImageFont
 import PIL.ImageOps
 
-from W2HBOT.utils import admin_cmd, sudo_cmd
-from userbot import CmdHelp, CMD_HELP, LOGS, bot as W2HBOT
+from ULTRONBOT.utils import admin_cmd, sudo_cmd
+from userbot import CmdHelp, CMD_HELP, LOGS, bot as ULTRONBOT
 from userbot.helpers.functions import (
     convert_toimage,
     convert_tosticker,
@@ -44,9 +44,9 @@ async def crop(imagefile, endname, x):
     inverted_image.save(endname)
 
 
-@W2HBOT.on(admin_cmd(pattern="invert$", outgoing=True))
-@W2HBOT.on(sudo_cmd(pattern="invert$", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(pattern="invert$", outgoing=True))
+@ULTRONBOT.on(sudo_cmd(pattern="invert$", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -56,7 +56,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -128,9 +128,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="solarize$"))
-@W2HBOT.on(sudo_cmd(pattern="solarize$", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="solarize$"))
+@ULTRONBOT.on(sudo_cmd(pattern="solarize$", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -140,7 +140,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -212,9 +212,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="mirror$"))
-@W2HBOT.on(sudo_cmd(pattern="mirror$", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="mirror$"))
+@ULTRONBOT.on(sudo_cmd(pattern="mirror$", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -224,7 +224,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -296,9 +296,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="flip$"))
-@W2HBOT.on(sudo_cmd(pattern="flip$", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="flip$"))
+@ULTRONBOT.on(sudo_cmd(pattern="flip$", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -308,7 +308,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -380,9 +380,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="gray$"))
-@W2HBOT.on(sudo_cmd(pattern="gray$", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="gray$"))
+@ULTRONBOT.on(sudo_cmd(pattern="gray$", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -392,7 +392,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -464,9 +464,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="zoom ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="zoom ?(.*)", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="zoom ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="zoom ?(.*)", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -478,7 +478,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
@@ -555,9 +555,9 @@ async def memes(W2H):
             os.remove(files)
 
 
-@W2HBOT.on(admin_cmd(outgoing=True, pattern="frame ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="frame ?(.*)", allow_sudo=True))
-async def memes(W2H):
+@ULTRONBOT.on(admin_cmd(outgoing=True, pattern="frame ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="frame ?(.*)", allow_sudo=True))
+async def memes(ULTRON):
     if ultron.fwd_from:
         return
     reply = await ultron.get_reply_message()
@@ -576,7 +576,7 @@ async def memes(W2H):
     ultronid = ultron.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    W2H = await edit_or_reply(ultron, "`Fetching media data`")
+    ULTRON = await edit_or_reply(ultron, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)

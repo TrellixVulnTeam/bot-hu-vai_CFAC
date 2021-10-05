@@ -2,7 +2,7 @@ import time
 
 from telethon import version
 from userbot import ALIVE_NAME, StartTime, ultronversion
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 async def reply_id(event):
@@ -14,9 +14,9 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "W2H User"
-W2H_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legend's Choice W2HBot"
+DEFAULTUSER = ALIVE_NAME or "ULTRON User"
+ULTRON_IMG = Config.ALIVE_PIC
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legend's Choice ULTRONBOT"
 
 USERID = bot.uid
 
@@ -54,23 +54,23 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="w2h$"))
-@bot.on(sudo_cmd(pattern="w2h$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="ULTRON$"))
+@bot.on(sudo_cmd(pattern="ULTRON$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
     reply_to_id = await reply_id(alive)
 
-    if W2H_IMG:
-        W2H_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
-        W2H_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        W2H_caption += f"     __**BOT STATUS**__\n\n"
-        W2H_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        W2H_caption += f"**★ W2HBOT :**`{ultronversion}`\n"
-        W2H_caption += f"**★ Uptime :** `{uptime}\n`"
-        W2H_caption += f"**★ Master:** {mention}\n"
+    if ULTRON_IMG:
+        ULTRON_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+        ULTRON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
+        ULTRON_caption += f"     __**BOT STATUS**__\n\n"
+        ULTRON_caption += f"**★ Telethon version :** `{version.__version__}`\n"
+        ULTRON_caption += f"**★ ULTRONBOT :**`{ultronversion}`\n"
+        ULTRON_caption += f"**★ Uptime :** `{uptime}\n`"
+        ULTRON_caption += f"**★ Master:** {mention}\n"
         await alive.client.send_file(
-            alive.chat_id, W2H_IMG, caption=W2H_caption, reply_to=reply_to_id
+            alive.chat_id, ULTRON_IMG, caption=ULTRON_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
@@ -80,7 +80,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"      __**BOT STATUS**__\n\n"
             f"**★ Telethon Version :** `{version.__version__}`\n"
-            f"**★ W2HBOT:** `{ultronversion}`\n"
+            f"**★ ULTRONBOT:** `{ultronversion}`\n"
             f"**★ Uptime :** `{uptime}\n`"
             f"**★ Master:** {mention}\n",
         )

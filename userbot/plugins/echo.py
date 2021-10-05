@@ -16,13 +16,13 @@ from userbot.plugins.sql_helper.echo_sql import (
     is_echo,
     remove_echo,
 )
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="echo$"))
 @bot.on(sudo_cmd(pattern="echo$", allow_sudo=True))
-async def echo(W2H):
+async def echo(ULTRON):
     if ultron.fwd_from:
         return
     if ultron.reply_to_msg_id is not None:
@@ -46,7 +46,7 @@ async def echo(W2H):
 
 @bot.on(admin_cmd(pattern="rmecho$"))
 @bot.on(sudo_cmd(pattern="rmecho$", allow_sudo=True))
-async def echo(W2H):
+async def echo(ULTRON):
     if ultron.fwd_from:
         return
     if ultron.reply_to_msg_id is not None:
@@ -70,7 +70,7 @@ async def echo(W2H):
 
 @bot.on(admin_cmd(pattern="listecho$"))
 @bot.on(sudo_cmd(pattern="listecho$", allow_sudo=True))
-async def echo(W2H):
+async def echo(ULTRON):
     if ultron.fwd_from:
         return
     lsts = get_all_echos()
@@ -99,7 +99,7 @@ async def echo(W2H):
 
 
 @bot.on(events.NewMessage(incoming=True))
-async def samereply(W2H):
+async def samereply(ULTRON):
     if ultron.chat_id in Config.UB_BLACK_LIST_CHAT:
         return
     if is_echo(ultron.sender_id, ultron.chat_id):

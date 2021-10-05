@@ -3,9 +3,9 @@ import requests
 import PIL.ImageOps
 from PIL import Image, ImageDraw, ImageFont
 
-from W2HBOT import CmdHelp
+from ULTRONBOT import CmdHelp
 from userbot.Config import Config
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 TEMP_DIR = os.environ.get("TEMP_DIR", "./temp/")
    
@@ -73,15 +73,15 @@ async def remove_background(event):
         )
         return
     contentType = response.headers.get("content-type")
-    remove_bg_image = "W2HBOT.png"
+    remove_bg_image = "ULTRONBOT.png"
     if "image" in contentType:
-        with open("W2HBOT.png", "wb") as removed_bg_file:
+        with open("ULTRONBOT.png", "wb") as removed_bg_file:
             removed_bg_file.write(response.content)
     else:
         await edit_or_reply(ultronevent, f"`{response.content.decode('UTF-8')}`")
         return
     if cmd == "srmbg":
-        file = convert_tosticker(remove_bg_image, filename="W2HBOT.webp")
+        file = convert_tosticker(remove_bg_image, filename="ULTRONBOT.webp")
         await event.client.send_file(
             event.chat_id,
             file,

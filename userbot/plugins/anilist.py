@@ -10,7 +10,7 @@ import re
 import requests
 
 from userbot import *
-from W2HBOT.utils import *
+from ULTRONBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 
 

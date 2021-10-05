@@ -61,12 +61,12 @@ def load_module(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.W2HBOT = bot
+        mod.ULTRONBOT = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_W2H = delete_W2H
-        # support for W2HBOT originals
-        sys.modules["W2HBOT.utils"] = userbot.utils
-        sys.modules["W2HBOT"] = userbot
+        mod.delete_ULTRON = delete_ULTRON
+        # support for ULTRONBOT originals
+        sys.modules["ULTRONBOT.utils"] = userbot.utils
+        sys.modules["ULTRONBOT"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
@@ -284,7 +284,7 @@ async def edit_or_reply(
     await event.delete()
     os.remove(file_name)
 
-async def delete_W2H(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_ULTRON(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5

@@ -6,12 +6,12 @@ from telethon.tl.functions.messages import DeleteHistoryRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from W2HBOT import CmdHelp, bot as W2HBOT
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from ULTRONBOT import CmdHelp, bot as ULTRONBOT
 
 
-@W2HBOT.on(admin_cmd("gencc$"))
-@W2HBOT.on(sudo_cmd("gencc$", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd("gencc$"))
+@ULTRONBOT.on(sudo_cmd("gencc$", allow_sudo=True))
 async def _(ultronevent):
     if ultronevent.fwd_from:
         return
@@ -23,18 +23,18 @@ async def _(ultronevent):
     await edit_or_reply(ultronevent, f"__**👤 NAME :- **__\n`{ultronname}`\n\n__**🏡 ADDRESS :- **__\n`{ultronadre}`\n\n__**💸 CARD :- **__\n`{ultroncard}`")
     
 
-@W2HBOT.on(admin_cmd(pattern="bin ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="bin ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="bin ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="bin ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
     await event.edit("Checking...")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/bin {W2H_input}")
+              await event.client.send_message(chat, f"/bin {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")
@@ -44,18 +44,18 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
 
 
-@W2HBOT.on(admin_cmd(pattern="vbv ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="vbv ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="vbv ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="vbv ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
     await event.edit("Checking...")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/vbv {W2H_input}")
+              await event.client.send_message(chat, f"/vbv {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")
@@ -65,18 +65,18 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
     
     
-@W2HBOT.on(admin_cmd(pattern="key ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="key ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="key ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="key ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
     await event.edit("Checking...")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/key {W2H_input}")
+              await event.client.send_message(chat, f"/key {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")
@@ -86,18 +86,18 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
  
   
-@W2HBOT.on(admin_cmd(pattern="iban ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="iban ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="iban ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="iban ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
     await event.edit("Checking...")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/iban {W2H_input}")
+              await event.client.send_message(chat, f"/iban {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")
@@ -107,18 +107,18 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
 
     
-@W2HBOT.on(admin_cmd(pattern="ccheck ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="ccheck ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="ccheck ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="ccheck ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
     await event.edit("Checking...")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/ss {W2H_input}")
+              await event.client.send_message(chat, f"/ss {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")
@@ -128,18 +128,18 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
              
              
-@W2HBOT.on(admin_cmd(pattern="ccbin ?(.*)"))
-@W2HBOT.on(sudo_cmd(pattern="ccbin ?(.*)", allow_sudo=True))
+@ULTRONBOT.on(admin_cmd(pattern="ccbin ?(.*)"))
+@ULTRONBOT.on(sudo_cmd(pattern="ccbin ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
-    W2H_input = event.pattern_match.group(1)
+    ULTRON_input = event.pattern_match.group(1)
     chat = "@carol5_bot"
-    await event.edit(f"Trying to generate CC from the given bin `{W2H_input}`")
+    await event.edit(f"Trying to generate CC from the given bin `{ULTRON_input}`")
     async with event.client.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1247032902))
-              await event.client.send_message(chat, f"/gen {W2H_input}")
+              await event.client.send_message(chat, f"/gen {ULTRON_input}")
               response = await response 
           except YouBlockedUserError: 
               await event.reply("Please Unblock @carol5_bot")

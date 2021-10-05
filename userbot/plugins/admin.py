@@ -31,7 +31,7 @@ from telethon.tl.types import (
 
 from userbot import *
 from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
-from W2HBOT.utils import *
+from ULTRONBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 
 from . import *
@@ -144,7 +144,7 @@ async def promote(promt):
     ultronevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "w2h"
+        rank = "ULTRON"
     if not user:
         return
     try:

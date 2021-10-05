@@ -7,7 +7,7 @@ import asyncurban
 from PyDictionary import PyDictionary
 
 from userbot import CMD_HELP
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="ud (.*)"))
@@ -36,7 +36,7 @@ async def _(event):
         return
     word = event.pattern_match.group(1)
     dictionary = PyDictionary()
-    W2H = dictionary.meaning(word)
+    ULTRON = dictionary.meaning(word)
     output = f"**Word :** __{word}__\n\n"
     try:
         for a, b in ultron.items():

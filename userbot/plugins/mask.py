@@ -18,43 +18,43 @@ from userbot.helpers.functions import (
     iphonex,
     lolice,
 )
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="mask$", outgoing=True))
 @bot.on(sudo_cmd(pattern="mask$", allow_sudo=True))
-async def _(W2HBOT):
-    reply_message = await W2HBOT.get_reply_message()
+async def _(ULTRONBOT):
+    reply_message = await ULTRONBOT.get_reply_message()
     if not reply_message.media or not reply_message:
-        await edit_or_reply(W2HBOT, "```reply to media message```")
+        await edit_or_reply(ULTRONBOT, "```reply to media message```")
         return
     chat = "@hazmat_suit_bot"
     if reply_message.sender.bot:
-        await edit_or_reply(W2HBOT, "```Reply to actual users message.```")
+        await edit_or_reply(ULTRONBOT, "```Reply to actual users message.```")
         return
-    event = await W2HBOT.edit("```Processing```")
-    async with W2HBOT.client.conversation(chat) as conv:
+    event = await ULTRONBOT.edit("```Processing```")
+    async with ULTRONBOT.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=905164246)
             )
-            await W2HBOT.client.send_message(chat, reply_message)
+            await ULTRONBOT.client.send_message(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await edit_or_reply(W2HBOT, "`Please unblock` @hazmat_suit_bot `and try again`")
+            await edit_or_reply(ULTRONBOT, "`Please unblock` @hazmat_suit_bot `and try again`")
             return
         if response.text.startswith("Forward"):
-            await edit_or_reply(W2HBOT, "```can you kindly disable your forward privacy settings for good?```"
+            await edit_or_reply(ULTRONBOT, "```can you kindly disable your forward privacy settings for good?```"
             )
         else:
-            await W2HBOT.client.send_file(event.chat_id, response.message.media)
+            await ULTRONBOT.client.send_file(event.chat_id, response.message.media)
             await event.delete()
 
 
 @bot.on(admin_cmd(pattern="awooify$", outgoing=True))
 @bot.on(sudo_cmd(pattern="awooify$", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -67,9 +67,9 @@ async def W2HBOT(ultronmemes):
         await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(
@@ -97,15 +97,15 @@ async def W2HBOT(ultronmemes):
         await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await awooify(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await awooify(ULTRON)
     await ultronevent.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="lolice$"))
 @bot.on(sudo_cmd(pattern="lolice$", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -118,9 +118,9 @@ async def W2HBOT(ultronmemes):
         await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(
@@ -148,15 +148,15 @@ async def W2HBOT(ultronmemes):
         await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await lolice(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await lolice(ULTRON)
     await ultronevent.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="bun$"))
 @bot.on(sudo_cmd(pattern="bun$", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -169,9 +169,9 @@ async def W2HBOT(ultronmemes):
         await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(
@@ -199,15 +199,15 @@ async def W2HBOT(ultronmemes):
         await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await baguette(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await baguette(ULTRON)
     await ultronevent.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="iphx$"))
 @bot.on(sudo_cmd(pattern="iphx$", allow_sudo=True))
-async def W2HBOT(ultronmemes):
+async def ULTRONBOT(ultronmemes):
     replied = await ultronmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -220,9 +220,9 @@ async def W2HBOT(ultronmemes):
         await edit_or_reply(ultronmemes, "reply to a supported media file")
         return
     try:
-        W2H = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        W2H = Get(W2H)
-        await ultronmemes.client(W2H)
+        ULTRON = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        ULTRON = Get(ULTRON)
+        await ultronmemes.client(ULTRON)
     except BaseException:
         pass
     download_location = await ultronmemes.client.download_media(
@@ -250,8 +250,8 @@ async def W2HBOT(ultronmemes):
         await ultronevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    W2H = f"https://telegra.ph{response[0]}"
-    W2H = await iphonex(W2H)
+    ULTRON = f"https://telegra.ph{response[0]}"
+    ULTRON = await iphonex(ULTRON)
     await ultronevent.delete()
     await ultronmemes.client.send_file(ultronmemes.chat_id, ultron, reply_to=replied)
 

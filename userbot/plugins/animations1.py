@@ -4,10 +4,10 @@ from collections import deque
 from telethon.tl.functions.users import GetFullUserRequest
 
 from userbot import *
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "W2H User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ULTRON User"
 
 @bot.on(admin_cmd(pattern=f"indflag$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"indflag$", allow_sudo=True))

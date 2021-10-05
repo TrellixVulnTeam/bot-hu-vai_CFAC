@@ -10,7 +10,7 @@ from telethon.errors import PhotoInvalidDimensionsError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from W2HBOT.utils import admin_cmd, edit_or_reply, progress, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, progress, sudo_cmd
 from userbot import CMD_HELP
 from userbot.helpers.functions import unzip
 from userbot.cmdhelp import CmdHelp
@@ -21,7 +21,7 @@ if not os.path.isdir("./temp"):
 
 @bot.on(admin_cmd(pattern="stoi$"))
 @bot.on(sudo_cmd(pattern="stoi$", allow_sudo=True))
-async def _(W2H):
+async def _(ULTRON):
     if ultron.fwd_from:
         return
     reply_to_id = ultron.message.id
@@ -56,7 +56,7 @@ async def _(W2H):
 
 @bot.on(admin_cmd(pattern="itos$"))
 @bot.on(sudo_cmd(pattern="itos$", allow_sudo=True))
-async def _(W2H):
+async def _(ULTRON):
     if ultron.fwd_from:
         return
     reply_to_id = ultron.message.id

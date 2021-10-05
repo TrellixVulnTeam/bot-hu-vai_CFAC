@@ -2,11 +2,11 @@ import asyncio
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 import random, re
 import asyncio
 from userbot.cmdhelp import CmdHelp
-from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, W2H_ID
+from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, ULTRON_ID
 from userbot import CMD_HELP
 
 

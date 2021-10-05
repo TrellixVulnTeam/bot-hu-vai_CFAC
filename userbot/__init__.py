@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-W2H_ID = ["1100735944"]
+ULTRON_ID = ["1100735944"]
 
 """ PPE initialization. """
 
@@ -149,7 +149,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/MickeyxD/W2HBOT.git")
+    "https://github.com/MickeyxD/ULTRONBOT.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)

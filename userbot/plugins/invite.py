@@ -2,7 +2,7 @@
 # porting to hellbot by @David99q...
 # i asked rekcah before porting...not like other kangers....
 # keep credit if u wanna kang...
-# Now in W2HBOT
+# Now in ULTRONBOT
 # else u are a gay...no doubt in that....
 
 # --------------------------------------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
 
 from userbot import CMD_HELP
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 async def get_chatinfo(event):
@@ -70,9 +70,9 @@ async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        W2H = await edit_or_reply(event, "`processing...`")
+        ULTRON = await edit_or_reply(event, "`processing...`")
     else:
-        W2H = await edit_or_reply(event, "`processing...`")
+        ULTRON = await edit_or_reply(event, "`processing...`")
     aura = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:

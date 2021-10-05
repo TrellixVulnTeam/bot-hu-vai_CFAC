@@ -11,9 +11,9 @@ import os
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
-from W2HBOT.Config import Config
+from ULTRONBOT.Config import Config
 
 SUDO_WALA = Config.SUDO_USERS
 
@@ -34,13 +34,13 @@ async def spammer(e):
 
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
-async def bigspam(W2H):
+async def bigspam(ULTRON):
     if not ultron.text[0].isalpha() and ultron.text[0] not in ("/", "#", "@", "!"):
-        W2H_msg = ultron.text
-        W2HBOT_count = int(W2H_msg[9:13])
-        W2H_spam = str(ultron.text[13:])
-        for i in range(1, W2HBOT_count):
-            await ultron.respond(W2H_spam)
+        ULTRON_msg = ultron.text
+        ULTRONBOT_count = int(ULTRON_msg[9:13])
+        ULTRON_spam = str(ultron.text[13:])
+        for i in range(1, ULTRONBOT_count):
+            await ultron.respond(ULTRON_spam)
         await ultron.delete()
         if LOGGER:
             await ultron.client.send_message(
@@ -101,5 +101,5 @@ CmdHelp("spam").add_command(
 ).add_command(
   "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", ".dspam 5 100 Hello"
 ).add_command(
-  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what W2HBOT iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
+  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what ULTRONBOT iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
 ).add()

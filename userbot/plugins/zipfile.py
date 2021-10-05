@@ -3,7 +3,7 @@ import os
 import time
 import zipfile
 
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from ULTRONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 
 @bot.on(admin_cmd(pattern="compress ?(.*)", outgoing=True))
@@ -45,7 +45,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".zip",
-                caption="Zipped By [W2HBOT](t.me/Its_UltronBot)",
+                caption="Zipped By [ULTRONBOT](t.me/Its_UltronBot)",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,

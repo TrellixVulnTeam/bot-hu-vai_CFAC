@@ -7,9 +7,9 @@ import asyncio
 from userbot.cmdhelp import CmdHelp
 
 from userbot import *
-from W2HBOT.utils import *
+from ULTRONBOT.utils import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "W2H User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ULTRON User"
 
 
 @bot.on(admin_cmd(pattern="imp(|n) (.*)", outgoing=True))

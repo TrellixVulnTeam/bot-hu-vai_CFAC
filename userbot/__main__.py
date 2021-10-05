@@ -13,7 +13,7 @@ from pathlib import Path
 import asyncio
 import telethon.utils
 os.system("pip install -U telethon")
-W2H_PIC = "https://telegra.ph/file/2fa3aee964d06061b3f5e.jpg"
+ULTRON_PIC = "https://telegra.ph/file/2fa3aee964d06061b3f5e.jpg"
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -35,7 +35,7 @@ else:
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
-        print("Starting Smoothest W2HBOT")
+        print("Starting Smoothest ULTRONBOT")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
@@ -53,7 +53,7 @@ for name in files:
 
 import userbot._core
 
-print(f"""W2HBOT IS ON!!! W2HBOT VERSION :- {ultronversion}
+print(f"""ULTRONBOT IS ON!!! ULTRONBOT VERSION :- {ultronversion}
 JOIN OFFICIAL CHAT GROUP AND UPDATES CHANNEL
 OFFICIAL GROUP :- @UltronBot_Support
 OFFICIAL CHANNEL :- @Its_UltronBot
@@ -65,8 +65,8 @@ async def legend_is_on():
         if Config.PM_LOGGR_BOT_API_ID != 0:
             await bot.send_file(
                 Config.PRIVATE_GROUP_BOT_API_ID,
-                W2H_PIC,
-                caption=f"#START \n\nDeployed W2HBOT Successfully\n\n**W2HBOT- 1.Ø**\n\nType `.ping` or `.alive` to check! \n\nJoin [W2HBot Channel](t.me/Its_UltronBot) for Updates & [W2HBot Chat](t.me/UltronBot_Support) for any query regarding W2HBot",
+                ULTRON_PIC,
+                caption=f"#START \n\nDeployed ULTRONBOT Successfully\n\n**ULTRONBOT- 1.Ø**\n\nType `.ping` or `.alive` to check! \n\nJoin [ULTRONBOT Channel](t.me/Its_UltronBot) for Updates & [ULTRONBOT Chat](t.me/UltronBot_Support) for any query regarding ULTRONBOT",
             )
     except Exception as e:
         print(str(e))

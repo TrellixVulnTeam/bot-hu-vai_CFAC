@@ -1,6 +1,6 @@
 # Made by @David99q for @Its_UltronBot
 
-from W2HBOT.utils import *
+from ULTRONBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 
 

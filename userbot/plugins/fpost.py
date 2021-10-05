@@ -2,7 +2,7 @@ import string
 
 from telethon.tl.types import Channel
 
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot import CMD_HELP
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
@@ -15,7 +15,7 @@ global groupsid
 groupsid = []
 
 
-async def all_groups_id(W2H):
+async def all_groups_id(ULTRON):
     ultrongroups = []
     async for dialog in ultron.client.iter_dialogs():
         entity = dialog.entity

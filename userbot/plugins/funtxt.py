@@ -1,6 +1,6 @@
 import nekos
 
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot import CMD_HELP
 from userbot.cmdhelp import CmdHelp
 
@@ -35,7 +35,7 @@ async def payf(event):
 
 @bot.on(admin_cmd(pattern="cat$"))
 @bot.on(sudo_cmd(pattern="cat$", allow_sudo=True))
-async def hmm(W2H):
+async def hmm(ULTRON):
     if ultron.fwd_from:
         return
     reactcat = nekos.textcat()
@@ -44,7 +44,7 @@ async def hmm(W2H):
 
 @bot.on(admin_cmd(pattern="why$"))
 @bot.on(sudo_cmd(pattern="why$", allow_sudo=True))
-async def hmm(W2H):
+async def hmm(ULTRON):
     if ultron.fwd_from:
         return
     whyultron. = nekos.why()
@@ -53,7 +53,7 @@ async def hmm(W2H):
 
 @bot.on(admin_cmd(pattern="fact$"))
 @bot.on(sudo_cmd(pattern="fact$", allow_sudo=True))
-async def hmm(W2H):
+async def hmm(ULTRON):
     if ultron.fwd_from:
         return
     factultron. = nekos.fact()

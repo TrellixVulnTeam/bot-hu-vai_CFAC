@@ -8,7 +8,7 @@ from telethon.tl import functions
 from telethon.tl.types import MessageEntityMentionName
 
 from userbot import CMD_HELP
-from W2HBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from ULTRONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="create (b|g|c) (.*)"))  # pylint:disable=E0602
@@ -52,7 +52,7 @@ async def _(event):
             r = await event.client(
                 functions.channels.CreateChannelRequest(
                     title=group_name,
-                    about="Created By W2HBOT",
+                    about="Created By ULTRONBOT",
                     megagroup=type_of_group != "c",
                 )
             )
